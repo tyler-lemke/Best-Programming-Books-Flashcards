@@ -1,0 +1,38 @@
+Its hard to define ________, but it is essentially whatever the important stuff of your system	architecture
+Improving small projects can offer a cumulative return because they	have disporportionate value compared to large projects
+Patterns don't replace your responsibility to ______ as you build software	think
+Because optimizations typically reduce readability we should measure _______ ________ to see if they work.	performance optimizations
+After _______ data, hardware, or anything else, analyze past performance optimizations and see if they still help	upgrading
+<div>Definition</div>______&nbsp; ______ is the amount of time it takes for the system to process a request from the outside.	Response time (definition)
+Definition<div><br></div><div>________ is about how quickly the system acknowledges a request as opposed to processing it.</div>	Responsiveness (definition)
+Definition<div>_______ is the minimum time required to get any form of response, even if the work to be done is nonexistant.</div>	latency (definition)
+Definition<div>_______ is how much stuff you can do in a given amount of time</div>	throughput (definition)
+Definition<div>________ is either throughput or response time</div>	performance (definition)
+Definition<div>______ is a statement of how much stress a system is under</div>	Load (definition)
+Definition<div>______ _____ is an expression of how the response time varies with a load.</div>	Load sensitivity (definition)
+Definition<div>______ is a term that refers to a systems relative load sensitivity</div>	Degredation (definition)&nbsp;
+Definition<div>____ is performance divided by resources.</div>	Effeciency (Definition)
+Definition<div>The _____ of a system is the maximum effective load/throughput.</div>	capacity (definition)
+Definition<div>_______ is a measure of how adding resources (usually hardware) affects performance.</div>	Scalability (definition)
+<div>______ scalability (scaling up) means adding more power to one server.<br></div>	vertical
+______ scalability (scaling out) means adding more servers.	horizontal
+In enterprise systems you <i>often, </i>build for hardware ______ rather than capacity or efficiency.	scalability
+Pattern _____ are crucial because they create a vocabulary about design	names
+How much do you need to know of a pattern to be able to use it?	its name and the problem it solves (then you can refer to the book)
+Fowler says that patterns are half-baked because	you have to finish them off in the 'oven' of your own project
+Few patterns are the _____ the right choice.	always
+_______ in the book are not the patterns themselves, so don't use them like a glorified macro.	Examples
+The examples in the book miss things like _______ ______ to keep them simple.	error handling
+The examples in the book are _______ so you get less guidance on how to use them together with other patterns	independent
+Patterns are a ______ _____, not a final destination.	starting point
+Layering<div>Layering can be represented like a cake where lower systems are unaware of ______ systems.</div>	higher
+______ make good places for standardization	Layers
+Layering<div>A _____ layer can be used for many higher layer services.</div>	higher
+Layering<div>Sometimes layers don't encapsulate things well which leads to ______ changes.</div>	cascading
+Layering<div>Extra layers can ____ performance.</div>	harm
+Layering<div>For the book, the focus is on these three primary layers</div>	Presentation<div>Domain</div><div>Data Source</div>
+<div>Layering</div>How you separate layers depends on the _______ of the application	complexity
+Layering<div>As a good rule, separating your domain and data from your presentation is a good idea because...</div>	It allows you to easily change or swap the presentation layer
+Layering<div>One important decision is deciding _____ to process/run your different layers</div>	where
+Layering<div>Data sources almost always run on _____</div>	servers
+Layering<div>Why should you avoid separating layers into descrete processes unless absolutely needed?</div>	increased complexity and degraded performance
